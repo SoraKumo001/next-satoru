@@ -14,12 +14,6 @@ importers:
       next:
         specifier: 16.1.6
         version: 16.1.6(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      preact:
-        specifier: 10.28.4
-        version: 10.28.4
-      preact-render-to-string:
-        specifier: 6.6.6
-        version: 6.6.6(preact@10.28.4)
       react:
         specifier: 19.2.4
         version: 19.2.4
@@ -3563,8 +3557,10 @@ snapshots:
   preact-render-to-string@6.6.6(preact@10.28.4):
     dependencies:
       preact: 10.28.4
+    optional: true
 
-  preact@10.28.4: {}
+  preact@10.28.4:
+    optional: true
 
   prelude-ls@1.2.1: {}
 
