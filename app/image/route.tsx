@@ -1,5 +1,6 @@
 import { render } from "satoru-render";
 import { toHtml } from "satoru-render/react";
+import { createCSS } from "satoru-render/tailwind";
 import { Type01, Type02, Type03, Type04, Type05 } from "./layouts";
 
 export async function GET(request: Request) {
@@ -32,6 +33,7 @@ export async function GET(request: Request) {
   try {
     const png = await render({
       value: html,
+      css: await createCSS(html), //Add Tailwind
       width: 1200,
       height: 720,
       format: "png",
